@@ -1,2 +1,2 @@
 # mentalist
- Página desenvolvida com o intuito de treinar os conhecimentos adquiridos em JavaScript em conjunto com adquiridos em HTML5 & CSS3
+ Página desenvolvida com o intuito de treinar os conhecimentos adquiridos na linguagem JavaScript em conjunto com os adquiridos em HTML5 & CSS3
