@@ -1,0 +1,232 @@
+/* ------- GLOBAL ------- */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #E9C220;
+}
+/* ---X--- GLOBAL ----X-- */
+
+/* ------- HEADER ------- */
+.header{
+    background-color: #d05f56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-logo{
+    width: 35em;
+    padding-top: 30px;
+}
+
+.header-nav{
+    padding: 50px 0px 5px;
+}
+.text{
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.header-nav-link{
+    font-size: 1.2em;
+    padding: 8px 15px 5px;
+}
+
+.header-nav-link:hover{
+    background-color: #881a12;
+    border-radius: 12px 2px 0px 0px;
+    transition: 1s;
+}
+/* ---X--- HEADER ---X--- */
+
+/* ------- MAIN ------- */
+.main{
+    max-width: 1200px;
+    height: 1000px;
+    margin: auto;
+    background-color: #f1b244;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.562);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-container-image{
+    max-width: 350px;
+    margin: auto;
+    padding: 80px 0px 30px 0px;
+}
+
+.main-container-title{
+    font-size: 2em;
+    padding: 0px 100px 30px;
+}
+
+.main-container-text{
+    padding: 10px 15px;
+    max-width: 500px;
+    background-color: #d05f56;
+    border-radius: 10px 0px 10px;
+    margin: 0px auto 30px;
+}
+
+.main-container-text:hover{
+    color: rgb(0, 0, 0);
+    background-color: #FFE032;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.664);
+    cursor: pointer;
+}
+
+
+input{
+    width: 150px;
+    font: bolder .8em Arial;
+    margin: 0px auto 2px;
+    border-radius: 2px;
+    padding: 2px 2px 2px 5px;
+}
+
+input::after{
+    clear: both;
+}
+
+button{
+    width: 100x;
+    margin: auto;
+    border-radius: 4px;
+    font: bolder 1em Arial;
+    padding: 2px 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+/* ------- MAIN ------- */
+
+/* ------- FOOTER ------- */
+.footer{
+    background-color: #d05f56;
+}
+
+.footer > .text{
+    font-size: 1.2em;
+    padding: 15px;
+}
+/* ---X--- FOOTER ---X--- */
+
+@media screen and (max-width: 650px) {
+    /* ------- HEADER ------- */
+    .header-logo{
+        width: 400px;
+        padding-top: 30px;
+    }
+
+    .header-nav{
+        padding: 25px 25px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        color: white;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .header-nav-link{
+        font-size: 1em;
+        background-color: #881a12;
+        border-radius: 10px;
+        border: 2px solid white;
+        padding: 10px 15px;
+        width: 200px;
+        margin-bottom: 8px;
+    }
+
+    .header-nav-link:hover{
+        background-color: #881a12;
+        border-radius: 10px;
+    }
+    /* ---X--- HEADER ---X--- */
+
+    /* ------- MAIN ------- */
+    .main{
+        height: 700px;
+    }
+    
+    .main-container-image{
+        max-width: 250px;
+        margin: auto;
+        padding: 50px 0px 10px 0px;
+    }
+
+    .main-container-title{
+        font-size: 1.5em;
+        padding: 0px 50px 30px;
+    }
+
+    .main-container-text{
+        padding: 10px 15px;
+        max-width: 400px;
+        background-color: #d05f56;
+        border-radius: 10px 0px 10px;
+        margin: 0px auto 10px;
+    }
+
+    .main-container-text:hover{
+        color: rgb(0, 0, 0);
+        background-color: #FFE032;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.664);
+        cursor: pointer;
+    }
+
+
+    input{
+        width: 150px;
+        font: bolder .8em Arial;
+        margin: 0px auto 2px;
+        border-radius: 2px;
+        padding: 2px 2px 2px 5px;
+    }
+
+    input::after{
+        clear: both;
+    }
+
+    button{
+        width: 100x;
+        margin: auto;
+        border-radius: 4px;
+        font: bolder 1em Arial;
+        padding: 2px 5px;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+    /* ------- MAIN ------- */
+
+    /* ------- FOOTER ------- */
+    .footer{
+        background-color: #d05f56;
+    }
+
+    .footer > .text{
+        font-size: 1.2em;
+        padding: 15px;
+    }
+    /* ---X--- FOOTER ---X--- */
+
+    
+}
