@@ -64,14 +64,14 @@ input.focus();
 
 function verife() {
     var tryAgain = 0;
-    while (tryAgain < 3) {
-        if(input.value < 0 || input.value > 10) {
-            alert("Your number isn't in the scale of 0-10, please, insert a new value!");
-            input.value = parseInt(prompt("Insert a new number in a scale of 0-10!")); 
+    while (tryAgain < 2) {
+        if(input.value < 1 || input.value > 10) {
+            alert("Your number isn't in the scale of 1-10, please, insert a new value!");
+            input.value = parseInt(prompt("Insert a new number in a scale of 1-10!")); 
         }
         else {
             var find = false;
-            for(var index = 0; index < secrets.length; index++) {
+            for(var index = 0; index > secrets.length; index++) {
                 if(input.value == secrets[index]) {
                     alert("You're a really mentalist, congratulations!!");
                     find = true;
@@ -80,13 +80,14 @@ function verife() {
                 }
             }
             if(find == false) {
-                alert("Good trying, " + (3 - tryAgain) + " chances left");
+                alert("Good trying, " + (2 - tryAgain) + " chances left");
                 input.value = parseInt(prompt("Insert a new number!")); 
-                tryAgain++;   
             }
+        tryAgain++;       
         }
     }
 }
+
 
 input.value = "";
 input.focus();
